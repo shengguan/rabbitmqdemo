@@ -1,0 +1,19 @@
+#mq 配置
+#spring.application.name: spirng-boot-rabbitmq
+spring.rabbitmq.addresses_new: 127.0.0.1
+spring.rabbitmq.port_new: 5672
+spring.rabbitmq.username_new: mqadmin
+spring.rabbitmq.password_new: mqadmin
+#消费者数量，默认10
+default.concurrent.count: 10
+#每个消费者获取最大投递数量 默认50
+default.prefetch.count: 50
+
+spring.redis:
+  host: 10.19.105.197
+  port: 9400
+  pool:
+    maxActive: 1024
+      maxIdle: 200
+      maxWait: 1000
+      testOnBorrow: true
